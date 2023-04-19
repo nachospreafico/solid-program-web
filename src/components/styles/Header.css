@@ -1,0 +1,30 @@
+@media only screen and (max-width: 415px) {
+  .header-container {
+    display: grid;
+    grid-template-columns: 0.33fr 0.67fr;
+  }
+
+  .header-logo {
+    width: 100%;
+  }
+
+  .join-now-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #292929;
+  }
+
+  .join-now-btn {
+    font-size: 2rem;
+    font-family: Bebas;
+    letter-spacing: 1px;
+    background-color: #292929;
+    color: white;
+    border: 3px solid white;
+    width: auto;
+    text-decoration: none;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}

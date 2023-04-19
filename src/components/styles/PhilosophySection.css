@@ -1,0 +1,41 @@
+@media only screen and (max-width: 415px) {
+  .philosophy-section-container {
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+  }
+
+  .philosophy-section-title {
+    font-family: Bebas;
+    font-size: 2.5rem;
+    margin: 5%;
+    color: #292929;
+    margin-bottom: 0;
+  }
+
+  .philosophy-section-description {
+    font-family: Barlow;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #292929;
+  }
+
+  .philosophy-description-container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". ."
+      ". .";
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+  }
+}

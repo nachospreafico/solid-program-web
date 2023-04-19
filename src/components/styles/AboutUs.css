@@ -1,0 +1,55 @@
+@media only screen and (max-width: 415px) {
+  .about-us-container {
+    display: grid;
+    grid-template-rows: auto;
+    background-color: white;
+  }
+
+  .about-us-header {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: #292929;
+  }
+
+  .about-us-title {
+    font-family: Bebas;
+    text-align: center;
+    font-size: 2.75rem;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 5%;
+  }
+
+  .about-us-subtitle {
+    font-family: Barlow;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0;
+  }
+
+  .about-us-details-container,
+  .about-us-details {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .about-details-title {
+    font-family: Bebas;
+    font-size: 2.25rem;
+    font-weight: bolder;
+    color: #292929;
+    text-align: center;
+    margin: 0;
+  }
+
+  .about-details-image {
+    width: 75%;
+  }
+}

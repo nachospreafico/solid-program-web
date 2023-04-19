@@ -1,0 +1,14 @@
+@font-face {
+  font-family: HeadingNow-Regular;
+  src: url("/src/assets/fonts/HeadingNow-Regular.ttf");
+}
+
+@font-face {
+  font-family: Bebas;
+  src: url("/src/assets/fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: Barlow;
+  src: url("/src/assets/fonts/BarlowCondensed-Regular.ttf");
+}
