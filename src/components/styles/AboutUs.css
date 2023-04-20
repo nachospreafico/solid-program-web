@@ -32,24 +32,78 @@
     margin-top: 0;
   }
 
-  .about-us-details-container,
-  .about-us-details {
+  .details-instructions-text {
+    text-align: center;
+    font-family: Barlow;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-weight: 1000;
+  }
+
+  .principles-container {
+    background-color: white;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .principles-main-title {
+    font-family: Bebas;
+    text-align: center;
+    font-size: 2.75rem;
+    color: #292929;
+    margin-bottom: 0;
+    margin-top: 5%;
+  }
+
+  .principles-list {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 8%;
+    margin-top: 0;
+  }
+
+  .principles-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .principles-list > * {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .principles-item {
+    display: grid;
+    position: relative;
+    background-color: #292929;
+    width: fit-content;
     justify-items: center;
     align-items: center;
+    padding: 8%;
+    padding-top: 0;
+    scroll-snap-stop: always;
+    padding-left: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
-  .about-details-title {
-    font-family: Bebas;
-    font-size: 2.25rem;
-    font-weight: bolder;
-    color: #292929;
+  .principles-item-title {
     text-align: center;
-    margin: 0;
+    font-size: 2rem;
+    color: white;
+    font-family: Bebas;
+    margin-bottom: 0;
+    margin-top: 5%;
   }
 
-  .about-details-image {
-    width: 75%;
+  .principles-item-description {
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    font-family: Barlow;
+    margin: 0;
   }
 }

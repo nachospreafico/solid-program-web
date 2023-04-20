@@ -12,6 +12,10 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <h3 className="contact-title">Contacto</h3>
+      <p className="contact-description">
+        ¿Tienes dudas o consultas? Envianos un mensaje y te responderemos a la
+        brevedad.
+      </p>
       <form className="contact-form">
         <label htmlFor="name">Nombre: </label>
         <input
@@ -36,6 +40,7 @@ const Contact = () => {
         ></input>
         <label htmlFor="message">Mensaje: </label>
         <textarea
+          rows="5"
           required
           name="message"
           id="message"

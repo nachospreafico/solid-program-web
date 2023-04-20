@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import MainSectionBackground from "/src/assets/images/Fio-Home.jpg";
+import { NavLink } from "react-router-dom";
 import "./styles/MainSection.css";
 
 const MainSection = () => {
@@ -18,7 +19,9 @@ const MainSection = () => {
         Programa de entrenamiento que te ofrece entrenamientos cuidadosamente
         planificados, constantemente variados, desafiantes y divertidos.
       </p>
-      <button className="main-section-btn">UNITE AHORA</button>
+      <NavLink to="/programs" className="main-section-btn">
+        UNETE AHORA
+      </NavLink>
     </div>
   );
 };

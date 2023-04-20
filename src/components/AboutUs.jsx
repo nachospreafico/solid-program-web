@@ -1,8 +1,21 @@
+import { useEffect } from "react";
+import AboutUsDetails from "./AboutUsDetails";
 import Fiore from "/src/assets/images/Fiore-SobreNosotros.jpg";
 import Nacho from "/src/assets/images/Nacho-SobreNosotros.jpg";
 import "./styles/AboutUs.css";
+import PhilosophySection from "./PhilosphySection";
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const fiorellaBio =
+    "Hola, soy Fiore. Entrenadora personal y Coach y Atleta de CrossFit. Cuento con más de 8 años de experiencia en el ámbito de la Salud y el Fitness";
+
+  const nachoBio =
+    "Hola, soy Nacho. Médico y Coach y Atleta de CrossFit. Cuento con más de 8 años de experiencia en el ámbito de la Salud y el Fitness";
+
   return (
     <div className="about-us-container">
       <div className="about-us-header">
@@ -11,22 +24,17 @@ const AboutUs = () => {
           Somos Fiore y Nacho, entrenadores, agentes de Salud y Atletas
         </p>
       </div>
-      <div className="about-us-details-container">
-        <div className="about-us-details">
-          <h3 className="about-details-title">Fiorella</h3>
-          <img src={Fiore} className="about-details-image"></img>
-          <p className="about-details-description">
-            Hola, soy Fiorella. Aguante la falopa!
-          </p>
-        </div>
-        <div className="about-us-details">
-          <h3 className="about-details-title">Fiorella</h3>
-          <img src={Nacho} className="about-details-image"></img>
-          <p className="about-details-desription">
-            Hola, soy Fiorella. Aguante la falopa!
-          </p>
-        </div>
+
+      <div className="details-instructions">
+        <p className="details-instructions-text">
+          Pincha sobre las fotos para más detalles!
+        </p>
       </div>
+
+      <AboutUsDetails imgSrc={Fiore} nombre="Fiore" bio={fiorellaBio} />
+      <AboutUsDetails imgSrc={Nacho} nombre="Nacho" bio={nachoBio} />
+
+      <PhilosophySection />
     </div>
   );
 };
