@@ -17,7 +17,6 @@ const Contact = () => {
         brevedad.
       </p>
       <form className="contact-form">
-        <label htmlFor="name">Nombre: </label>
         <input
           type="text"
           name="name"
@@ -27,7 +26,6 @@ const Contact = () => {
           id="name"
           placeholder="Nombre"
         ></input>
-        <label htmlFor="email">Email: </label>
         <input
           type="email"
           name="email"
@@ -38,9 +36,8 @@ const Contact = () => {
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           placeholder="Email"
         ></input>
-        <label htmlFor="message">Mensaje: </label>
         <textarea
-          rows="5"
+          rows="4"
           required
           name="message"
           id="message"

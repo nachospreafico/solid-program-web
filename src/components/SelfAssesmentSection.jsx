@@ -9,8 +9,8 @@ const SelfAssesmentSection = () => {
         Hace nuestra Autoevaluacion para que te recomendemos el programa que
         mejor se adapte a ti!
       </p>
-      <NavLink to={"/programs"}>
-        <button className="self-section-btn">Realizar Autoevaluacion</button>
+      <NavLink to={"/programs"} className="self-section-btn">
+        Realizar Autoevaluacion
       </NavLink>
     </div>
   );

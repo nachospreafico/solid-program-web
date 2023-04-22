@@ -27,12 +27,14 @@ const AboutUs = () => {
 
       <div className="details-instructions">
         <p className="details-instructions-text">
-          Pincha sobre las fotos para más detalles!
+          Clickea sobre las fotos para más detalles!
         </p>
       </div>
 
-      <AboutUsDetails imgSrc={Fiore} nombre="Fiore" bio={fiorellaBio} />
-      <AboutUsDetails imgSrc={Nacho} nombre="Nacho" bio={nachoBio} />
+      <div className="about-us-list-container">
+        <AboutUsDetails imgSrc={Fiore} nombre="Fiore" bio={fiorellaBio} />
+        <AboutUsDetails imgSrc={Nacho} nombre="Nacho" bio={nachoBio} />
+      </div>
 
       <PhilosophySection />
     </div>

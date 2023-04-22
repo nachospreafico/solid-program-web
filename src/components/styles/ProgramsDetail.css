@@ -62,4 +62,71 @@
     padding-left: 3%;
     padding-right: 3%;
   }
-} ;
+}
+
+@media only screen and (min-width: 1280px) {
+  .program-card {
+    display: grid;
+    position: relative;
+    background-color: transparent;
+    width: fit-content;
+    justify-items: center;
+    align-items: center;
+    padding: 8%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+
+  .program-image {
+    width: 70%;
+    filter: saturate(125%) brightness(85%) contrast(75%) blur(0);
+    transition: 1s;
+  }
+
+  .blurred {
+    filter: saturate(125%) brightness(25%) contrast(65%) blur(3px);
+    transition: 1s;
+  }
+
+  .visible {
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .program-title {
+    font-family: Bebas;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    bottom: 75%;
+    text-align: center;
+  }
+
+  .program-description {
+    font-family: Barlow;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 35%;
+    margin: 12%;
+    margin-left: 22%;
+    margin-right: 22%;
+    transition: 1s;
+  }
+
+  .program-link {
+    background-color: transparent;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-family: Bebas;
+    font-size: 2.5rem;
+    border: white solid 2px;
+    width: fit-content;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}

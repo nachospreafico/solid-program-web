@@ -30,9 +30,55 @@
     font-family: Bebas;
     font-size: 2rem;
     margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: transparent;
+    color: #292929;
+    border: solid 3px #292929;
+    text-decoration: none;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .programs-section-container {
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+  }
+
+  .programs-section-title {
+    font-family: Bebas;
+    font-size: 2.5rem;
+    margin: 2%;
+    color: #292929;
+    margin-bottom: 0;
+  }
+
+  .programs-section-description {
+    font-family: Barlow;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #292929;
+  }
+
+  .programs-section-btn {
+    text-decoration: none;
+    padding: 1%;
+    width: fit-content;
+    font-family: Bebas;
+    font-size: 2rem;
+    margin-top: 6%;
     margin-bottom: 15%;
     background-color: transparent;
     color: #292929;
     border: solid 3px #292929;
+    margin: 0;
+    margin-bottom: 2%;
   }
 }

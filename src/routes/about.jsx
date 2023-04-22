@@ -7,7 +7,6 @@ const AboutUsRoot = () => {
   return (
     <div>
       <Header />
-      <NavBar />
       <AboutUs />
       <Footer />
     </div>

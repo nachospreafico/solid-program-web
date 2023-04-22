@@ -7,7 +7,6 @@ const ContactRoot = () => {
   return (
     <div>
       <Header />
-      <NavBar />
       <Contact />
       <Footer />
     </div>

@@ -7,7 +7,6 @@ const ProgramsRoot = () => {
   return (
     <div>
       <Header />
-      <NavBar />
       <ProgramsDetailContainer />
       <Footer />
     </div>

@@ -1,14 +1,34 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import PlaceholderImage from "/src/assets/images/Solid-Logo-500x500.jpg";
 import "./styles/ProgramsDetail.css";
 
-const ProgramsDetail = ({ title, imgSrc, endpoint }) => {
+const ProgramsDetail = ({ title, imgSrc, endpoint, text }) => {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
     setClicked(!clicked);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [showComponent, setShowComponent] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth >= 1280) {
+        setShowComponent(true);
+      } else {
+        setShowComponent(false);
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="program-card">
@@ -17,18 +37,22 @@ const ProgramsDetail = ({ title, imgSrc, endpoint }) => {
         className={`program-image${clicked ? " blurred" : ""}`}
         onClick={handleClick}
       />
+      {showComponent ? (
+        <h3 className="program-title">{title}</h3>
+      ) : (
+        <h3
+          className={`program-title ${clicked == false ? "visible" : ""}`}
+          onClick={handleClick}
+        >
+          {title}
+        </h3>
+      )}
 
-      <h3
-        className={`program-title ${clicked == false ? "visible" : ""}`}
-        onClick={handleClick}
-      >
-        {title}
-      </h3>
       <p
         className={`program-description ${clicked == false ? "visible" : ""}`}
         onClick={handleClick}
       >
-        Texto de Prueba! Aca habria texto, pero todavia no.
+        {text ? text : "Texto de Prueba! Aca habria texto, pero todavia no."}
       </p>
       <a
         href={`https://app.fitr.training/p/${endpoint}`}

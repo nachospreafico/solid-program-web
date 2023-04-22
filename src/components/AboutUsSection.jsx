@@ -4,13 +4,13 @@ import "./styles/AboutUsSection.css";
 const AboutUsSection = () => {
   return (
     <div className="about-section-container">
-      <h3 className="about-section-title">Encantados de Conocerte!</h3>
+      <h3 className="about-section-title">Encantados en Conocerte!</h3>
       <p className="about-section-description">
         Hola, somos Fiore y Nacho. Creemos que entrenar es una parte fundamental
         de la salud y bienestar. ¡Únete a nuestro entrenamiento en línea!
       </p>
-      <NavLink to="/about">
-        <button className="about-section-btn">Conocenos</button>
+      <NavLink to="/about" className="about-section-btn">
+        Conocenos
       </NavLink>
     </div>
   );

@@ -9,7 +9,7 @@ const AboutUsDetails = ({ imgSrc, nombre, bio }) => {
   }
 
   return (
-    <div className="about-us-details">
+    <div className="about-us-details-container">
       <h3
         className={`about-details-title${isClicked == false ? " visible" : ""}`}
         onClick={handleIsClicked}
