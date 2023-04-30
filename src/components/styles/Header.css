@@ -29,6 +29,101 @@
   }
 }
 
+@media only screen and (min-width: 416px) and (max-width: 665px) {
+  .header-container {
+    display: grid;
+    grid-template-columns: 0.33fr 0.67fr;
+  }
+
+  .header-logo {
+    width: 100%;
+  }
+
+  .join-now-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #292929;
+  }
+
+  .join-now-btn {
+    font-size: 2rem;
+    font-family: Bebas;
+    letter-spacing: 1px;
+    background-color: #292929;
+    color: white;
+    border: 3px solid white;
+    width: auto;
+    text-decoration: none;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+@media only screen and (min-width: 666px) and (max-width: 920px) {
+  .header-container {
+    display: grid;
+    grid-template-columns: 0.16fr 0.01fr 0.55fr 0.28fr;
+  }
+
+  .header-logo {
+    width: 80%;
+  }
+
+  .join-now-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #292929;
+  }
+
+  .join-now-btn {
+    font-size: 1.5rem;
+    font-family: Bebas;
+    letter-spacing: 1px;
+    background-color: #292929;
+    color: white;
+    border: 3px solid white;
+    width: auto;
+    text-decoration: none;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (min-width: 921px) and (max-width: 1280px) {
+  .header-container {
+    display: grid;
+    grid-template-columns: 0.16fr 0.12fr 0.5fr 0.2fr;
+  }
+
+  .header-logo {
+    width: 60%;
+  }
+
+  .join-now-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #292929;
+  }
+
+  .join-now-btn {
+    font-size: 2rem;
+    font-family: Bebas;
+    letter-spacing: 1px;
+    background-color: #292929;
+    color: white;
+    border: 3px solid white;
+    width: auto;
+    text-decoration: none;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 5%;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .header-container {
     display: grid;
@@ -36,7 +131,7 @@
   }
 
   .header-logo {
-    width: 35%;
+    width: 45%;
     margin: 2%;
   }
 

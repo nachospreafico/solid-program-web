@@ -48,6 +48,113 @@
   }
 }
 
+@media only screen and (min-width: 666px) and (max-width: 920px) {
+  .about-us-list-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-us-details-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .about-details-title {
+    font-family: Bebas;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    bottom: 60%;
+    transition: 1s;
+    z-index: 1;
+  }
+
+  .about-details-image {
+    width: 80%;
+    transition: 1s;
+    margin-bottom: 5%;
+  }
+
+  .about-details-description {
+    font-family: Barlow;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    position: absolute;
+    transition: 1s;
+    margin-left: 16%;
+    margin-right: 16%;
+    transition: 1s;
+  }
+
+  .blurred {
+    filter: saturate(125%) brightness(25%) contrast(65%) blur(3px);
+    transition: 1s;
+  }
+
+  .visible {
+    opacity: 0;
+    transition: 1s;
+  }
+}
+
+@media only screen and (min-width: 921px) and (max-width: 1280px) {
+  .about-us-details-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .about-us-details {
+    position: relative;
+  }
+
+  .about-details-title {
+    font-family: Bebas;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    bottom: 27%;
+    transition: 1s;
+    z-index: 1;
+  }
+
+  .about-details-image {
+    width: 70%;
+    transition: 1s;
+    margin-bottom: 5%;
+  }
+
+  .about-details-description {
+    font-family: Barlow;
+    font-size: 1.7rem;
+    text-align: center;
+    color: white;
+    position: absolute;
+    transition: 1s;
+    margin-left: 10%;
+    margin-right: 10%;
+    transition: 1s;
+  }
+
+  .blurred {
+    filter: saturate(125%) brightness(25%) contrast(65%) blur(3px);
+    transition: 1s;
+  }
+
+  .visible {
+    opacity: 0;
+    transition: 1s;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .about-us-details-container {
     display: grid;

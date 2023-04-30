@@ -7,7 +7,7 @@ const AboutUsSection = () => {
       <h3 className="about-section-title">Encantados en Conocerte!</h3>
       <p className="about-section-description">
         Hola, somos Fiore y Nacho. Creemos que entrenar es una parte fundamental
-        de la salud y bienestar. ¡Únete a nuestro entrenamiento en línea!
+        de la salud y bienestar.
       </p>
       <NavLink to="/about" className="about-section-btn">
         Conocenos

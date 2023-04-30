@@ -78,6 +78,178 @@
   }
 }
 
+@media only screen and (min-width: 666px) and (max-width: 920px) {
+  .contact-container {
+    background-color: white;
+    padding: 2%;
+    margin-top: 0;
+  }
+  .contact-form {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contact-title {
+    font-family: Bebas;
+    font-size: 2.25rem;
+    color: #292929;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .contact-description {
+    font-family: Barlow;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    color: #292929;
+    margin-bottom: 2%;
+  }
+
+  .contact-form label,
+  .contact-form input {
+    font-family: Barlow;
+    font-size: 1.25rem;
+    margin: 0;
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #292929;
+  }
+
+  .contact-form input {
+    background-color: #e4e4e4;
+    width: 50%;
+  }
+
+  .contact-form label {
+    font-weight: 1000;
+  }
+
+  #message {
+    width: 50%;
+    font-family: Barlow;
+    font-size: 1.25rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #e4e4e4;
+    height: 100%;
+    resize: none;
+  }
+
+  .contact-btn {
+    width: fit-content;
+    font-family: Bebas;
+    font-size: 1.75rem;
+    background-color: transparent;
+    color: #292929;
+    border: solid 3px #292929;
+    margin-top: 1%;
+  }
+
+  .message-success {
+    font-size: 1.5rem;
+    font-family: Barlow;
+    font-style: italic;
+    color: green;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 921px) and (max-width: 1280px) {
+  .contact-container {
+    background-color: white;
+    padding: 2%;
+  }
+  .contact-form {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contact-title {
+    font-family: Bebas;
+    font-size: 2.25rem;
+    color: #292929;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .contact-description {
+    font-family: Barlow;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    color: #292929;
+    margin-bottom: 2%;
+  }
+
+  .contact-form label,
+  .contact-form input {
+    font-family: Barlow;
+    font-size: 1.25rem;
+    margin: 0;
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #292929;
+  }
+
+  .contact-form input {
+    background-color: #e4e4e4;
+    width: 50%;
+  }
+
+  .contact-form label {
+    font-weight: 1000;
+  }
+
+  #message {
+    width: 50%;
+    font-family: Barlow;
+    font-size: 1.25rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #e4e4e4;
+    height: 100%;
+    resize: none;
+  }
+
+  .contact-btn {
+    width: fit-content;
+    font-family: Bebas;
+    font-size: 1.75rem;
+    background-color: transparent;
+    color: #292929;
+    border: solid 3px #292929;
+    margin-top: 1%;
+  }
+
+  .message-success {
+    font-size: 1.5rem;
+    font-family: Barlow;
+    font-style: italic;
+    color: green;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-bottom: 0;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .contact-container {
     background-color: white;

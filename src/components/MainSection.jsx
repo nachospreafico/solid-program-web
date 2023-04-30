@@ -13,7 +13,7 @@ const MainSection = () => {
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth >= 1280) {
+      if (window.innerWidth >= 666) {
         setShowComponent(true);
       } else {
         setShowComponent(false);

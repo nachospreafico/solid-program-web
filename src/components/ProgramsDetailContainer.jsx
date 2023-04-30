@@ -11,15 +11,11 @@ const ProgramsDetailContainer = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const [showComponent, setShowComponent] = useState(false);
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth >= 1280) {
+      if (window.innerWidth >= 635) {
         setShowComponent(true);
       } else {
         setShowComponent(false);

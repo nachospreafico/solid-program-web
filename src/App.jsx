@@ -5,6 +5,8 @@ import ProgramsSection from "./components/ProgramsSection";
 import SelfAssesmentSection from "./components/SelfAssesmentSection";
 import Contact from "./components/Contact";
 import AboutUsSection from "./components/AboutUsSection";
+import CommentsSection from "./components/CommentsSection";
+import Banner from "./components/Banner.jsx";
 import "./App.css";
 
 function App() {

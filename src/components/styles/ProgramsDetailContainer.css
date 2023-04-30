@@ -56,6 +56,58 @@
   }
 }
 
+@media only screen and (min-width: 635px) and (max-width: 950px) {
+  .programs-detail-container {
+    display: grid;
+    grid-template-rows: auto;
+    background-color: rgb(237, 237, 237);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .programs-detail-header {
+    background-color: #292929;
+    width: 100%;
+  }
+
+  .instructions {
+    margin-bottom: 2%;
+  }
+
+  .instructions-text {
+    text-align: center;
+    font-family: Barlow;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    font-weight: 1000;
+    width: 100%;
+  }
+
+  .programs-detail-title {
+    font-family: Bebas;
+    text-align: center;
+    font-size: 2.75rem;
+    color: white;
+    margin: 0;
+  }
+
+  .programs-detail-subtitle {
+    font-family: Barlow;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0;
+  }
+
+  .programs-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .programs-detail-container {
     display: grid;

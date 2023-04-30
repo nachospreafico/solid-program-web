@@ -4,6 +4,9 @@ const PhilosophySection = () => {
   return (
     <div className="principles-container">
       <h3 className="principles-main-title">Nuestros Valores</h3>
+      <p className="principles-instructions">
+        Desliza para ver la lista completa
+      </p>
       <ul className="principles-list">
         <li className="principles-item">
           <h3 className="principles-item-title">Lo primero es la Salud</h3>
@@ -22,7 +25,7 @@ const PhilosophySection = () => {
           </p>
         </li>
         <li className="principles-item">
-          <h3 className="principles-item-title">Prevenira antes que curar</h3>
+          <h3 className="principles-item-title">Prevenir antes que curar</h3>
           <p className="principles-item-description">
             Priorizamos la seguridad en todos los aspectos de nuestro programa
             de fitness. Hacemos hincapié en la técnica y la forma adecuadas para
@@ -31,10 +34,10 @@ const PhilosophySection = () => {
           </p>
         </li>
         <li className="principles-item">
-          <h3 className="principles-item-title">Responsabilidad</h3>
+          <h3 className="principles-item-title">Hacernos responsables</h3>
           <p className="principles-item-description">
             Creemos en asumir la responsabilidad de nuestras acciones y
-            responsabilizarnos de los resultados que entregamos. Nos esforzamos
+            responsabilizarnos de los resultados que obtenemos. Nos esforzamos
             por ser transparentes en todas nuestras relaciones con nuestros
             atletas.
           </p>
@@ -51,15 +54,15 @@ const PhilosophySection = () => {
           <h3 className="principles-item-title">Mejora continua</h3>
           <p className="principles-item-description">
             Estamos comprometidos con el aprendizaje y la mejora continua en
-            todos los aspectos de nuestra Programacion. Nos mantenemos al día
-            con las últimas investigaciones y tendencias en fitness y nutrición
-            para brindar el mejor servicio posible.
+            todos los aspectos de nuestra formación. Nos mantenemos al día con
+            las últimas investigaciones y tendencias en fitness y nutrición para
+            brindar el mejor servicio posible.
           </p>
         </li>
         <li className="principles-item">
           <h3 className="principles-item-title">Crear Comunidad</h3>
           <p className="principles-item-description">
-            Creemos en crear una comunidad Solida donde nuestros clientes puedan
+            Buscamos crear una comunidad Solida donde nuestros clientes puedan
             conectarse con personas afines y encontrar la motivación y el apoyo
             necesarios para alcanzar sus objetivos.
           </p>
