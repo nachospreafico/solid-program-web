@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import PlaceholderImage from "/src/assets/images/Solid-Logo-500x500.jpg";
 import "./styles/ProgramsDetail.css";
 
 const ProgramsDetail = ({ title, imgSrc, endpoint, text }) => {

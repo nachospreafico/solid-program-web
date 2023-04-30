@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AboutUsDetails from "./AboutUsDetails";
-import Fiore from "/src/assets/images/Fiore-SobreNosotros.jpg";
-import Nacho from "/src/assets/images/Nacho-SobreNosotros.jpg";
+import Fiore from "./../assets/images/Fiore-SobreNosotros.jpg";
+import Nacho from "./../assets/images/Nacho-SobreNosotros.jpg";
 import "./styles/AboutUs.css";
 import PhilosophySection from "./PhilosphySection";
 

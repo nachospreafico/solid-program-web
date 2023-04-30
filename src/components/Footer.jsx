@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import FooterLogo from "/src/assets/images/Solid-Logo-Header.png";
+import FooterLogo from "./../assets/images/Solid-Logo-Header.png";
 import { NavLink } from "react-router-dom";
-import InstagramLogo from "/src/assets/images/instagram-icon.png";
-import YoutubeLogo from "/src/assets/images/youtube-icon.png";
+import InstagramLogo from "./../assets/images/instagram-icon.png";
+import YoutubeLogo from "./../assets/images/youtube-icon.png";
 import "./styles/Footer.css";
 
 const Footer = () => {

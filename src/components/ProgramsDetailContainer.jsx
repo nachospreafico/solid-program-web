@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import ProgramsDetail from "./ProgramsDetail";
-import CompetitorImg from "/src/assets/images/Nacho_AB.jpg";
-import QueensImg from "/src/assets/images/Fio_Queens.png";
-import FitnessImg from "/src/assets/images/Fitness-KB-Swing.jpg";
-import PersonalImg from "/src/assets/images/Personal_Training.jpg";
+import CompetitorImg from "./../assets/images/Nacho_AB.jpg";
+import QueensImg from "./../assets/images/Fio_Queens.png";
+import FitnessImg from "./../assets/images/Fitness-KB-Swing.jpg";
+import PersonalImg from "./../assets/images/Personal_Training.jpg";
 import "./styles/ProgramsDetailContainer.css";
 
 const ProgramsDetailContainer = () => {

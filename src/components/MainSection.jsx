@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import MainSectionBackground from "/src/assets/images/Fio-Home.jpg";
-import MainSectionBackground2 from "/src/assets/images/Nacho-Home.jpg";
+import MainSectionBackground from "./../assets/images/Fio-Home.jpg";
+import MainSectionBackground2 from "./../assets/images/Nacho-Home.jpg";
 import { NavLink } from "react-router-dom";
 import "./styles/MainSection.css";
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import NavBar from "./NavBar";
-import HeaderLogo from "/src/assets/images/Solid-Logo-Header.png";
+import HeaderLogo from "./../assets/images/Solid-Logo-Header.png";
 import { NavLink } from "react-router-dom";
 import "./styles/Header.css";
 
