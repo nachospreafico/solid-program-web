@@ -10,10 +10,6 @@ import "./styles/Contact.css";
 const Contact = () => {
   const [messageSent, setMessageSent] = useState(false);
 
-  const name = document.querySelector("#name");
-  const email = document.querySelector("#email");
-  const message = document.querySelector("#message");
-
   const db = getFirestore();
 
   const sendMessage = (userName, userEmail, userMessage) => {
@@ -72,7 +68,11 @@ const Contact = () => {
           className="contact-btn"
           onClick={(event) => {
             event.preventDefault();
-            sendMessage(name.value, email.value, message.value);
+            sendMessage(
+              document.querySelector("#name").value,
+              document.querySelector("#email").value,
+              document.querySelector("#message").value
+            );
           }}
         >
           Enviar
