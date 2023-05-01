@@ -1,9 +1,7 @@
 import { useState } from "react";
 import {
   getFirestore,
-  doc,
   addDoc,
-  updateDoc,
   collection,
   serverTimestamp,
 } from "firebase/firestore";
@@ -20,7 +18,7 @@ const Contact = () => {
 
   const sendMessage = (userName, userEmail, userMessage) => {
     const date = serverTimestamp();
-    const message = {
+    const messageData = {
       user: { name: userName, email: userEmail },
       message: userMessage,
       date: date,
@@ -28,7 +26,7 @@ const Contact = () => {
 
     const collectionRef = collection(db, "messages");
 
-    addDoc(collectionRef, message)
+    addDoc(collectionRef, messageData)
       .then((messageRef) => {
         const messageId = messageRef.id;
         setMessageSent(true);
@@ -72,7 +70,10 @@ const Contact = () => {
         ></textarea>
         <button
           className="contact-btn"
-          onClick={() => sendMessage(name.value, email.value, message.value)}
+          onClick={(event) => {
+            event.preventDefault();
+            sendMessage(name.value, email.value, message.value);
+          }}
         >
           Enviar
         </button>
