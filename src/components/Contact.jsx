@@ -21,7 +21,7 @@ const Contact = () => {
   const sendMessage = (userName, userEmail, userMessage) => {
     const date = serverTimestamp();
     const message = {
-      name: { name: userName, email: userEmail },
+      user: { name: userName, email: userEmail },
       message: userMessage,
       date: date,
     };
