@@ -51,7 +51,7 @@ const ProgramsDetail = ({ title, imgSrc, endpoint, text }) => {
         className={`program-description ${clicked == false ? "visible" : ""}`}
         onClick={handleClick}
       >
-        {text ? text : "Texto de Prueba! Aca habria texto, pero todavia no."}
+        {text}
       </p>
       <a
         href={`https://app.fitr.training/p/${endpoint}`}

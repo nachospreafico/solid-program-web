@@ -34,6 +34,8 @@ const ProgramsDetailContainer = () => {
     "Programa diseñado para personas de cualquier nivel que quieran hacer hincapié en los grupos musculares correspondientes a Gluteos, Abdomen y Piernas.";
   const fitnessText =
     "Programa diseñado para Atletas Principiantes/Intermedios que solo dispongan de 1 hora al día para entrenar, de 3 a 5 dias a la semana.";
+  const personalizadosText =
+    "Programa personalizado de 3, 4 o 5 dias. Se adapta 100% a tus objetivos, disponibilidad y necesidades! Consulta más.";
 
   return (
     <div className="programs-detail-container">
@@ -73,6 +75,7 @@ const ProgramsDetailContainer = () => {
         />
         <ProgramsDetail
           title="Personalizado"
+          text={personalizadosText}
           imgSrc={PersonalImg}
           endpoint="solid-personalizados"
         />
