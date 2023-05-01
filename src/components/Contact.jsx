@@ -72,7 +72,7 @@ const Contact = () => {
         ></textarea>
         <button
           className="contact-btn"
-          onClick={sendMessage(name.value, email.value, message.value)}
+          onClick={() => sendMessage(name.value, email.value, message.value)}
         >
           Enviar
         </button>
