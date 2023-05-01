@@ -17,6 +17,7 @@ function App() {
       <AboutUsSection />
       <ProgramsSection />
       <SelfAssesmentSection />
+      <Banner />
       <Contact />
       <Footer />
     </div>
