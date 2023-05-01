@@ -1,4 +1,4 @@
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 416px) {
   .header-container {
     display: grid;
     grid-template-columns: 0.33fr 0.67fr;

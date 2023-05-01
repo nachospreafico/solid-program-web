@@ -108,6 +108,126 @@
   }
 }
 
+@media only screen and (min-width: 416px) and (max-width: 665px) {
+  .about-us-container {
+    display: grid;
+    grid-template-rows: auto;
+    background-color: white;
+  }
+
+  .about-us-header {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: #292929;
+  }
+
+  .about-us-title {
+    font-family: Bebas;
+    text-align: center;
+    font-size: 2.75rem;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 2%;
+  }
+
+  .about-us-subtitle {
+    font-family: Barlow;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0;
+  }
+
+  .details-instructions-text {
+    text-align: center;
+    font-family: Barlow;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-weight: 1000;
+  }
+
+  .principles-container {
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+  .principles-main-title {
+    font-family: Bebas;
+    text-align: center;
+    font-size: 2.75rem;
+    color: #292929;
+    margin-bottom: 0;
+    margin-top: 1%;
+  }
+
+  .principles-instructions {
+    text-align: center;
+    font-family: Barlow;
+    font-size: 1.5rem;
+    margin: 1%;
+  }
+
+  .principles-list {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 0;
+  }
+
+  .principles-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .principles-list > * {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .principles-item {
+    display: grid;
+    position: relative;
+    background-color: #292929;
+    width: fit-content;
+    justify-items: center;
+    align-items: center;
+    padding: 8%;
+    padding-top: 0;
+    padding-bottom: 2%;
+    scroll-snap-stop: always;
+    padding-left: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .principles-item-title {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-family: Bebas;
+    margin-bottom: 0;
+    margin-top: 1%;
+  }
+
+  .principles-item-description {
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    font-family: Barlow;
+    margin: 0;
+  }
+}
+
 @media only screen and (min-width: 666px) and (max-width: 920px) {
   .about-us-container {
     display: grid;

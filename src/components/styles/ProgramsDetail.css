@@ -1,4 +1,70 @@
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 426px) {
+  .program-card {
+    display: grid;
+    position: relative;
+    background-color: transparent;
+    width: fit-content;
+    justify-items: center;
+    align-items: center;
+    padding: 8%;
+    padding-top: 0;
+    scroll-snap-stop: always;
+  }
+
+  .program-image {
+    width: 100%;
+    filter: saturate(125%) brightness(85%) contrast(75%) blur(0);
+    transition: 1s;
+  }
+
+  .blurred {
+    filter: saturate(125%) brightness(25%) contrast(65%) blur(3px);
+    transition: 1s;
+  }
+
+  .visible {
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .program-title {
+    font-family: Bebas;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    bottom: 70%;
+    text-align: center;
+    transition: 1s;
+  }
+
+  .program-description {
+    font-family: Barlow;
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 30%;
+    margin: 12%;
+    transition: 1s;
+  }
+
+  .program-link {
+    background-color: transparent;
+    text-decoration: none;
+    position: absolute;
+    bottom: 12%;
+    color: white;
+    font-family: Bebas;
+    font-size: 2rem;
+    border: white solid 2px;
+    width: fit-content;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 635px) {
   .program-card {
     display: grid;
     position: relative;
