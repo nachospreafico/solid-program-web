@@ -1,20 +1,47 @@
 import { useState } from "react";
+import {
+  getFirestore,
+  doc,
+  addDoc,
+  updateDoc,
+  collection,
+  serverTimestamp,
+} from "firebase/firestore";
 import "./styles/Contact.css";
 
 const Contact = () => {
-  const [sent, setSet] = useState(false);
+  const [messageSent, setMessageSent] = useState(false);
 
-  function handleMessageSent(event) {
-    event.preventDefault();
-    setSet(true);
-  }
+  const name = document.querySelector("#name");
+  const email = document.querySelector("#email");
+  const message = document.querySelector("#message");
+
+  const db = getFirestore();
+
+  const sendMessage = (userName, userEmail, userMessage) => {
+    const date = serverTimestamp();
+    const message = {
+      name: { name: userName, email: userEmail },
+      message: userMessage,
+      date: date,
+    };
+
+    const collectionRef = collection(db, "messages");
+
+    addDoc(collectionRef, message)
+      .then((messageRef) => {
+        const messageId = messageRef.id;
+        setMessageSent(true);
+      })
+      .catch((error) => console.log(error));
+  };
 
   return (
     <div className="contact-container">
       <h3 className="contact-title">Contacto</h3>
       <p className="contact-description">
-        ¿Tienes dudas o consultas? Envianos un mensaje y te responderemos a la
-        brevedad.
+        ¿Tienes dudas, consultas o comentarios? Envianos un mensaje y te
+        responderemos a la brevedad.
       </p>
       <form className="contact-form">
         <input
@@ -45,12 +72,11 @@ const Contact = () => {
         ></textarea>
         <button
           className="contact-btn"
-          onClick={handleMessageSent}
-          disabled={sent}
+          onClick={sendMessage(name.value, email.value, message.value)}
         >
           Enviar
         </button>
-        {sent ? (
+        {messageSent ? (
           <p className="message-success">Tu mensaje se envió correctamente.</p>
         ) : null}
       </form>
