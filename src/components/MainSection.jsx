@@ -28,7 +28,11 @@ const MainSection = () => {
 
   return (
     <div className="main-section-container">
-      <img src={MainSectionBackground} className="main-section-bg"></img>
+      <img
+        src={MainSectionBackground}
+        className="main-section-bg"
+        alt="Mujer entrenando"
+      ></img>
       {showComponent ? (
         <div className="main-section-description-container">
           <h1 className="main-section-title">ESTAS LISTO PARA ENTRENAR?</h1>
@@ -58,7 +62,11 @@ const MainSection = () => {
         </div>
       )}
       {showComponent ? (
-        <img className="main-section-bg-2" src={MainSectionBackground2}></img>
+        <img
+          className="main-section-bg-2"
+          src={MainSectionBackground2}
+          alt="Hombre entrenando"
+        ></img>
       ) : null}
     </div>
   );

@@ -169,4 +169,11 @@
     margin: 0;
     margin-bottom: 2%;
   }
+
+  .typeform-form {
+    text-align: center;
+    width: 800px;
+    font-size: 100px;
+    padding: 20px;
+  }
 }
