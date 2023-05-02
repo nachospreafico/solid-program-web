@@ -31,7 +31,7 @@ const MainSection = () => {
       <img src={MainSectionBackground} className="main-section-bg"></img>
       {showComponent ? (
         <div className="main-section-description-container">
-          <h2 className="main-section-title">ESTAS LISTO PARA ENTRENAR?</h2>
+          <h1 className="main-section-title">ESTAS LISTO PARA ENTRENAR?</h1>
           <p className="main-section-description">
             Programa de Entrenamiento que te ofrece entrenamientos
             cuidadosamente planificados, constantemente variados, desafiantes y
@@ -43,10 +43,10 @@ const MainSection = () => {
         </div>
       ) : (
         <div>
-          <h2 className="main-section-title">
+          <h1 className="main-section-title">
             <br></br>
             ESTAS LISTO PARA ENTRENAR?
-          </h2>
+          </h1>
           <p className="main-section-description">
             Programa de entrenamiento que te ofrece entrenamientos
             cuidadosamente planificados, constantemente variados, desafiantes y
