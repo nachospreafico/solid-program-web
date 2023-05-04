@@ -33,23 +33,20 @@ const Contact = () => {
 
   const { executeRecaptcha } = useGoogleReCaptcha();
 
-  const handleOnSubmit = async (e) => {
+  const handleOnSubmit = (e) => {
     e.preventDefault();
 
-    const token = await executeRecaptcha();
-
-    if (!token) {
-      // Captcha is not solved
-      alert("Por favor, resuelve el reCAPTCHA para enviar el mensaje.");
-      return;
-    }
-
-    sendMessage(
-      document.querySelector("#name").value,
-      document.querySelector("#email").value,
-      document.querySelector("#message").value,
-      token
-    );
+    const siteKey = "6Lf2XtIlAAAAAGz6q_AJh9stQ7HSgugu9qdZ0bsg";
+    window.grecaptcha.ready(() => {
+      window.grecaptcha.execute(siteKey, { action: "submit" }).then((token) => {
+        sendMessage(
+          document.querySelector("#name").value,
+          document.querySelector("#email").value,
+          document.querySelector("#message").value,
+          token
+        );
+      });
+    });
   };
 
   return (
