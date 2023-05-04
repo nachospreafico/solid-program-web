@@ -1,5 +1,3 @@
-import "./styles/PhilosophySection.css";
-
 const PhilosophySection = () => {
   return (
     <div className="principles-container">

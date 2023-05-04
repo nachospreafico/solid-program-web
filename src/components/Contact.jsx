@@ -5,12 +5,11 @@ import {
   collection,
   serverTimestamp,
 } from "firebase/firestore";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import "./styles/Contact.css";
-import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const [messageSent, setMessageSent] = useState(false);
-  const [captchaToken, setCaptchaToken] = useState("");
 
   const db = getFirestore();
 
@@ -32,24 +31,25 @@ const Contact = () => {
       .catch((error) => console.log(error));
   };
 
-  const handleOnSubmit = (e) => {
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
+  const handleOnSubmit = async (e) => {
     e.preventDefault();
 
-    if (captchaToken === "") {
+    const token = await executeRecaptcha();
+
+    if (!token) {
       // Captcha is not solved
       alert("Por favor, resuelve el reCAPTCHA para enviar el mensaje.");
       return;
     }
+
     sendMessage(
       document.querySelector("#name").value,
       document.querySelector("#email").value,
       document.querySelector("#message").value,
-      captchaToken
+      token
     );
-  };
-
-  const handleOnCaptchaChange = (value) => {
-    setCaptchaToken(value);
   };
 
   return (
@@ -90,21 +90,17 @@ const Contact = () => {
           id="message"
           placeholder="Escribe aquí tu consulta..."
         ></textarea>
-        <ReCAPTCHA
-          sitekey="6Lf2XtIlAAAAAGz6q_AJh9stQ7HSgugu9qdZ0bsg"
-          onChange={handleOnCaptchaChange}
+        <input
+          type="hidden"
+          name="g-recaptcha-response"
+          id="g-recaptcha-response"
         />
-        <button
-          className="contact-btn"
-          type="submit"
-          data-sitekey="6Lf2XtIlAAAAAGz6q_AJh9stQ7HSgugu9qdZ0bsg"
-        >
+        <button className="contact-btn" type="submit">
           Enviar
         </button>
         {messageSent ? (
           <p className="message-success">Tu mensaje se envió correctamente.</p>
         ) : null}
-        <input type="hidden" name="captchaToken" value={captchaToken} />
       </form>
     </div>
   );

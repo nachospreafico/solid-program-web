@@ -58,7 +58,7 @@ const ProgramsDetail = ({ title, imgSrc, endpoint, text }) => {
         target="_blank"
         className="program-link"
       >
-        {title === "Personalizado" ? "Consultanos" : `Unite a ${title}`}
+        {title === "Personalizado" ? "Consultanos" : `Unete a ${title}`}
       </a>
     </div>
   );

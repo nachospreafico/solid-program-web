@@ -411,6 +411,12 @@
     margin-top: 0;
   }
 
+  .principles-instructions {
+    font-family: Barlow;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
   .principles-list {
     display: grid;
     grid-template-rows: auto;
