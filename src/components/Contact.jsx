@@ -5,7 +5,6 @@ import {
   collection,
   serverTimestamp,
 } from "firebase/firestore";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import "./styles/Contact.css";
 
 const Contact = () => {
@@ -13,13 +12,16 @@ const Contact = () => {
 
   const db = getFirestore();
 
-  const sendMessage = (userName, userEmail, userMessage, captchaToken) => {
+  const sendMessage = (e) => {
+    e.preventDefault();
+    const userName = document.querySelector("#name").value;
+    const userEmail = document.querySelector("#email").value;
+    const userMessage = document.querySelector("#message").value;
     const date = serverTimestamp();
     const messageData = {
       user: { name: userName, email: userEmail },
       message: userMessage,
       date: date,
-      captchaToken: captchaToken,
     };
 
     const collectionRef = collection(db, "messages");
@@ -31,24 +33,6 @@ const Contact = () => {
       .catch((error) => console.log(error));
   };
 
-  const { executeRecaptcha } = useGoogleReCaptcha();
-
-  const handleOnSubmit = (e) => {
-    e.preventDefault();
-
-    const siteKey = "6Lf2XtIlAAAAAGz6q_AJh9stQ7HSgugu9qdZ0bsg";
-    window.grecaptcha.ready(() => {
-      window.grecaptcha.execute(siteKey, { action: "submit" }).then((token) => {
-        sendMessage(
-          document.querySelector("#name").value,
-          document.querySelector("#email").value,
-          document.querySelector("#message").value,
-          token
-        );
-      });
-    });
-  };
-
   return (
     <div className="contact-container">
       <h3 className="contact-title">Contacto</h3>
@@ -56,11 +40,7 @@ const Contact = () => {
         ¿Tienes dudas, consultas o comentarios? Envíanos un mensaje y te
         responderemos a la brevedad.
       </p>
-      <form
-        className="contact-form"
-        id="contact-form"
-        onSubmit={handleOnSubmit}
-      >
+      <form className="contact-form" id="contact-form">
         <input
           type="text"
           name="name"
@@ -92,7 +72,7 @@ const Contact = () => {
           name="g-recaptcha-response"
           id="g-recaptcha-response"
         />
-        <button className="contact-btn" type="submit">
+        <button className="contact-btn" type="submit" onClick={sendMessage}>
           Enviar
         </button>
         {messageSent ? (
