@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@typeform/embed": "^2.10.0",
+    "@typeform/embed-react": "^2.20.0",
     "axios": "^1.4.0",
     "firebase": "^9.20.0",
     "firebase-admin": "^11.7.0",
