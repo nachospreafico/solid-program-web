@@ -37,10 +37,12 @@ const ProgramsDetail = ({ title, imgSrc, endpoint, text }) => {
         onClick={handleClick}
       />
       {showComponent ? (
-        <h3 className="program-title">{title}</h3>
+        <h3 className={`program-title ${clicked == true ? "transformed" : ""}`}>
+          {title}
+        </h3>
       ) : (
         <h3
-          className={`program-title ${clicked == false ? "visible" : ""}`}
+          className={`program-title ${clicked == true ? "transformed" : ""}`}
           onClick={handleClick}
         >
           {title}

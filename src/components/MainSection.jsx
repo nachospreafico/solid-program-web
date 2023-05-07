@@ -35,7 +35,11 @@ const MainSection = () => {
       ></img>
       {showComponent ? (
         <div className="main-section-description-container">
-          <h1 className="main-section-title">ESTAS LISTO PARA ENTRENAR?</h1>
+          <h1 className="main-section-title">
+            <span className="main-over-title">SOLID PROGRAM</span>
+            <br></br>
+            ESTAS LISTO PARA ENTRENAR?
+          </h1>
           <p className="main-section-description">
             Programa de Entrenamiento que te ofrece entrenamientos
             cuidadosamente planificados, constantemente variados, desafiantes y

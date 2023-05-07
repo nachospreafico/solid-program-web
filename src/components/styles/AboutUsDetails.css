@@ -220,17 +220,17 @@
   .about-details-title {
     font-family: Bebas;
     text-align: center;
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: bolder;
     color: white;
     position: absolute;
-    bottom: 25%;
+    bottom: -25%;
     transition: 1s;
     z-index: 1;
   }
 
   .about-details-image {
-    width: 60%;
+    width: 65%;
     transition: 1s;
     margin-bottom: 5%;
   }
@@ -245,6 +245,10 @@
     margin-left: 12%;
     margin-right: 12%;
     transition: 1s;
+  }
+
+  .transformed {
+    bottom: 25%;
   }
 
   .blurred {

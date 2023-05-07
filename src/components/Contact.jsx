@@ -76,7 +76,9 @@ const Contact = () => {
           Enviar
         </button>
         {messageSent ? (
-          <p className="message-success">Tu mensaje se envió correctamente.</p>
+          <p className="message-success">
+            Tu mensaje se envió correctamente. Gracias por contactarnos!
+          </p>
         ) : null}
       </form>
     </div>

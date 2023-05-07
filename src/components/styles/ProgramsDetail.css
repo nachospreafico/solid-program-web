@@ -27,13 +27,17 @@
     transition: 1s;
   }
 
+  .program-title.transformed {
+    bottom: 60%;
+  }
+
   .program-title {
     font-family: Bebas;
-    font-size: 2.5rem;
+    font-size: 3.75rem;
     font-weight: bolder;
     color: white;
     position: absolute;
-    bottom: 70%;
+    bottom: 32%;
     text-align: center;
     transition: 1s;
   }
@@ -227,18 +231,18 @@
 
   .program-title {
     font-family: Bebas;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bolder;
     color: white;
     position: absolute;
-    bottom: 80%;
+    bottom: 65%;
     text-align: center;
     transition: 1s;
   }
 
   .program-description {
     font-family: Barlow;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: center;
     color: white;
     position: absolute;
@@ -251,10 +255,10 @@
     background-color: transparent;
     text-decoration: none;
     position: absolute;
-    bottom: 12%;
+    bottom: 15%;
     color: white;
     font-family: Bebas;
-    font-size: 2rem;
+    font-size: 2.5rem;
     border: white solid 2px;
     width: fit-content;
     padding-left: 3%;
@@ -276,7 +280,7 @@
   }
 
   .program-image {
-    width: 70%;
+    width: 80%;
     filter: saturate(125%) brightness(85%) contrast(75%) blur(0);
     transition: 1s;
   }
@@ -291,23 +295,28 @@
     transition: 1s;
   }
 
+  .program-title.transformed {
+    bottom: 60%;
+    transition: 1s;
+  }
+
   .program-title {
     font-family: Bebas;
-    font-size: 3rem;
+    font-size: 4.25rem;
     font-weight: bolder;
     color: white;
     position: absolute;
-    bottom: 75%;
+    bottom: 33%;
     text-align: center;
   }
 
   .program-description {
     font-family: Barlow;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     color: white;
     position: absolute;
-    bottom: 35%;
+    bottom: 22%;
     margin: 12%;
     margin-left: 22%;
     margin-right: 22%;

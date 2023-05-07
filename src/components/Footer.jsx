@@ -6,23 +6,6 @@ import YoutubeLogo from "./../assets/images/youtube-icon.png";
 import "./styles/Footer.css";
 
 const Footer = () => {
-  const [showComponent, setShowComponent] = useState(false);
-
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth >= 1280) {
-        setShowComponent(true);
-      } else {
-        setShowComponent(false);
-      }
-    }
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <div className="footer-container">
       <div className="footer-logo-container">

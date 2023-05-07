@@ -11,10 +11,10 @@ const AboutUs = () => {
   }, []);
 
   const fiorellaBio =
-    "Hola, soy Fiore. Entrenadora personal y Coach y Atleta de CrossFit. Cuento con más de 8 años de experiencia en el ámbito de la Salud y el Fitness";
+    "Hola, soy Fiore. Entrenadora personal y Coach y Atleta de CrossFit. Cuento con más de 8 años de experiencia en el ámbito de la Salud y el Fitness.";
 
   const nachoBio =
-    "Hola, soy Nacho. Médico y Coach y Atleta de CrossFit. Cuento con más de 8 años de experiencia en el ámbito de la Salud y el Fitness";
+    "Hola, soy Nacho. Médico y Coach y Atleta de CrossFit. Cuento con más de 8 años de experiencia en el ámbito de la Salud y el Fitness.";
 
   return (
     <div className="about-us-container">

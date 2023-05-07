@@ -29,7 +29,7 @@ const ProgramsDetailContainer = () => {
   }, []);
 
   const competitorText =
-    "Competitor esta diseñado para Atletas Avanzados que compitan o busquen competir en el deporte del Fitness";
+    "Competitor esta diseñado para Atletas Avanzados que compitan o busquen competir en el deporte del Fitness. 5 dias de entrenamiento a la semana, 90 a 120 minutos por sesión.";
   const queensText =
     "Programa diseñado para personas de cualquier nivel que quieran hacer hincapié en los grupos musculares correspondientes a Gluteos, Abdomen y Piernas.";
   const fitnessText =
@@ -44,6 +44,20 @@ const ProgramsDetailContainer = () => {
         <h3 className="programs-detail-subtitle">
           Unete a Solid Program eligiendo el Programa que mejor se adecue a ti!
         </h3>
+      </div>
+
+      <div className="fitr-container">
+        <p className="fitr-description">
+          Todos nuestros Programas son distribuidos a traves de la App de{" "}
+          <a
+            href="https://app.fitr.training/"
+            target="_blank"
+            className="fitr-link"
+          >
+            Fitr
+          </a>{" "}
+          ®
+        </p>
       </div>
 
       <div className="instructions">
