@@ -1,20 +1,13 @@
 import { useEffect } from "react";
 import AboutUsDetails from "./AboutUsDetails";
-import Fiore from "./../assets/images/Fiore-SobreNosotros.jpg";
-import Nacho from "./../assets/images/Nacho-SobreNosotros.jpg";
-import "./styles/AboutUs.css";
 import PhilosophySection from "./PhilosphySection";
+import aboutUsDetails from "./descriptions/aboutUsDetails";
+import "./styles/AboutUs.css";
 
 const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const fiorellaBio =
-    "Hola, soy Fiore. Entrenadora personal y Coach y Atleta de CrossFit. Cuento con más de 8 años de experiencia en el ámbito de la Salud y el Fitness.";
-
-  const nachoBio =
-    "Hola, soy Nacho. Médico y Coach y Atleta de CrossFit. Cuento con más de 8 años de experiencia en el ámbito de la Salud y el Fitness.";
 
   return (
     <div className="about-us-container">
@@ -32,8 +25,16 @@ const AboutUs = () => {
       </div>
 
       <div className="about-us-list-container">
-        <AboutUsDetails imgSrc={Fiore} nombre="Fiore" bio={fiorellaBio} />
-        <AboutUsDetails imgSrc={Nacho} nombre="Nacho" bio={nachoBio} />
+        {aboutUsDetails.map((elem) => {
+          return (
+            <AboutUsDetails
+              name={elem.name}
+              bio={elem.bio}
+              img={elem.img}
+              key={elem.name}
+            />
+          );
+        })}
       </div>
 
       <PhilosophySection />

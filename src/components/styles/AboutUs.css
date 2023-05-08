@@ -1,4 +1,4 @@
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 426px) {
   .about-us-container {
     display: grid;
     grid-template-rows: auto;
@@ -75,6 +75,13 @@
     max-width: 100vw;
   }
 
+  .principles-instructions {
+    text-align: center;
+    font-family: Barlow;
+    font-size: 1.5rem;
+    margin: 1%;
+  }
+
   .principles-item {
     display: grid;
     position: relative;
@@ -108,7 +115,7 @@
   }
 }
 
-@media only screen and (min-width: 416px) and (max-width: 665px) {
+@media only screen and (min-width: 425px) and (max-width: 666px) {
   .about-us-container {
     display: grid;
     grid-template-rows: auto;
@@ -149,6 +156,11 @@
     margin-bottom: 5%;
     margin-top: 5%;
     font-weight: 1000;
+  }
+
+  .about-us-list-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .principles-container {
@@ -314,6 +326,13 @@
     max-width: 100vw;
   }
 
+  .principles-instructions {
+    text-align: center;
+    font-family: Barlow;
+    font-size: 1.5rem;
+    margin: 1%;
+  }
+
   .principles-item {
     display: grid;
     position: relative;
@@ -412,9 +431,7 @@
   }
 
   .principles-instructions {
-    font-family: Barlow;
-    text-align: center;
-    font-size: 1.5rem;
+    display: none;
   }
 
   .principles-list {

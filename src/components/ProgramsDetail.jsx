@@ -37,7 +37,7 @@ const ProgramsDetail = ({
   }, []);
 
   return (
-    <div className="program-card" key={key}>
+    <div className="program-card" key={title}>
       <img
         src={imgSrc}
         className={`program-image${clicked ? " blurred" : ""}`}

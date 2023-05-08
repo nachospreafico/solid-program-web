@@ -15,7 +15,7 @@ const products = [
   {
     title: "Queens",
     description:
-      "Programa diseñado para personas de cualquier nivel que quieran hacer hincapié en los grupos musculares correspondientes a Gluteos, Abdomen y Piernas.",
+      "Programa diseñado para personas de cualquier nivel que quieran trabajar principalmente Gluteos, Abdomen y Piernas.",
     duration: "3 dias/semana, sesiones de 60-90 minutos",
     img: QueensImg,
     endpoint: "solid-queens",

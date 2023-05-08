@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import ProgramsDetail from "./ProgramsDetail";
-import CompetitorImg from "./../assets/images/Nacho_AB.jpg";
-import QueensImg from "./../assets/images/Fio_Queens.png";
-import FitnessImg from "./../assets/images/Fitness-KB-Swing.jpg";
-import PersonalImg from "./../assets/images/Personal_Training.jpg";
-import products from "./productsDescriptions/productsDescriptions.jsx";
+import products from "./descriptions/productsDescriptions.jsx";
 import "./styles/ProgramsDetailContainer.css";
 
 const ProgramsDetailContainer = () => {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./styles/AboutUsDetails.css";
 
-const AboutUsDetails = ({ imgSrc, nombre, bio }) => {
+const AboutUsDetails = ({ img, name, bio }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   function handleIsClicked() {
@@ -16,10 +16,10 @@ const AboutUsDetails = ({ imgSrc, nombre, bio }) => {
         }`}
         onClick={handleIsClicked}
       >
-        {nombre}
+        {name}
       </h3>
       <img
-        src={imgSrc}
+        src={img}
         className={`about-details-image${isClicked ? " blurred" : ""}`}
         onClick={handleIsClicked}
       ></img>
