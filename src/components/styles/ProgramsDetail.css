@@ -48,8 +48,21 @@
     text-align: center;
     color: white;
     position: absolute;
-    bottom: 30%;
+    bottom: 35%;
     margin: 12%;
+    transition: 1s;
+  }
+
+  .program-duration {
+    font-family: Barlow;
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 18%;
+    margin: 12%;
+    margin-left: 22%;
+    margin-right: 22%;
     transition: 1s;
   }
 
@@ -266,7 +279,7 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1279px) {
   .program-card {
     display: grid;
     position: relative;
@@ -296,28 +309,41 @@
   }
 
   .program-title.transformed {
-    bottom: 60%;
+    bottom: 65%;
     transition: 1s;
   }
 
   .program-title {
     font-family: Bebas;
-    font-size: 4.25rem;
+    font-size: 4rem;
     font-weight: bolder;
     color: white;
     position: absolute;
-    bottom: 33%;
+    bottom: 35%;
     text-align: center;
     transition: 1s;
   }
 
   .program-description {
     font-family: Barlow;
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-align: center;
     color: white;
     position: absolute;
-    bottom: 22%;
+    bottom: 35%;
+    margin: 12%;
+    margin-left: 20%;
+    margin-right: 20%;
+    transition: 1s;
+  }
+
+  .program-duration {
+    font-family: Barlow;
+    font-size: 1.75rem;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 15%;
     margin: 12%;
     margin-left: 22%;
     margin-right: 22%;

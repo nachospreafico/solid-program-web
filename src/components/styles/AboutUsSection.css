@@ -138,6 +138,7 @@
     grid-template-rows: auto;
     justify-items: center;
     align-items: center;
+    border-bottom: solid 3px #292929;
   }
 
   .about-section-title {

@@ -16,7 +16,7 @@ const products = [
     title: "Queens",
     description:
       "Programa diseñado para personas de cualquier nivel que quieran hacer hincapié en los grupos musculares correspondientes a Gluteos, Abdomen y Piernas.",
-    durations: "3 dias/semana, sesiones de 60-90 minutos",
+    duration: "3 dias/semana, sesiones de 60-90 minutos",
     img: QueensImg,
     endpoint: "solid-queens",
   },
@@ -24,7 +24,7 @@ const products = [
     title: "Solid Hour",
     description:
       "Programa diseñado para Atletas Principiantes/Intermedios que solo dispongan de 1 hora al día para entrenar.",
-    durations: "3 o 5 dias/semana, 60 minutos por sesion",
+    duration: "3 o 5 dias/semana, 60 minutos por sesion",
     img: FitnessImg,
     endpoint: "solid-hour-5d",
   },

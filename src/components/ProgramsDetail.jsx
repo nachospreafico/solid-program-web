@@ -1,7 +1,14 @@
 import { useState, useEffect } from "react";
 import "./styles/ProgramsDetail.css";
 
-const ProgramsDetail = ({ title, imgSrc, endpoint, description, duration }) => {
+const ProgramsDetail = ({
+  key,
+  title,
+  imgSrc,
+  endpoint,
+  description,
+  duration,
+}) => {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
@@ -30,7 +37,7 @@ const ProgramsDetail = ({ title, imgSrc, endpoint, description, duration }) => {
   }, []);
 
   return (
-    <div className="program-card">
+    <div className="program-card" key={key}>
       <img
         src={imgSrc}
         className={`program-image${clicked ? " blurred" : ""}`}
@@ -54,6 +61,9 @@ const ProgramsDetail = ({ title, imgSrc, endpoint, description, duration }) => {
         onClick={handleClick}
       >
         {description}
+      </p>
+      <p className={`program-duration ${clicked == false ? "visible" : ""}`}>
+        Duracion: {duration}
       </p>
       <a
         href={`https://app.fitr.training/p/${endpoint}`}

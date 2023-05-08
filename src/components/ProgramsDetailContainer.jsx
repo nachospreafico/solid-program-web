@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import ProgramsDetail from "./ProgramsDetail";
 import CompetitorImg from "./../assets/images/Nacho_AB.jpg";
 import QueensImg from "./../assets/images/Fio_Queens.png";
 import FitnessImg from "./../assets/images/Fitness-KB-Swing.jpg";
 import PersonalImg from "./../assets/images/Personal_Training.jpg";
+import products from "./productsDescriptions/productsDescriptions.jsx";
 import "./styles/ProgramsDetailContainer.css";
 
 const ProgramsDetailContainer = () => {
@@ -56,7 +58,7 @@ const ProgramsDetailContainer = () => {
           >
             Fitr
           </a>{" "}
-          ®
+          ® Client. <NavLink>Más información</NavLink>
         </p>
       </div>
 
@@ -69,30 +71,18 @@ const ProgramsDetailContainer = () => {
       </div>
 
       <div className="programs-list">
-        <ProgramsDetail
-          title="Competitor"
-          imgSrc={CompetitorImg}
-          endpoint="solid-comp"
-          description={competitorText}
-        />
-        <ProgramsDetail
-          title="Queens"
-          imgSrc={QueensImg}
-          endpoint="solid-queens"
-          description={queensText}
-        />
-        <ProgramsDetail
-          title="Solid Hour"
-          imgSrc={FitnessImg}
-          endpoint="solid-hour-5d"
-          description={fitnessText}
-        />
-        <ProgramsDetail
-          title="Personalizado"
-          description={personalizadosText}
-          imgSrc={PersonalImg}
-          endpoint="solid-personalizados"
-        />
+        {products.map((elem) => {
+          return (
+            <ProgramsDetail
+              key={elem.title}
+              title={elem.title}
+              imgSrc={elem.img}
+              description={elem.description}
+              endpoint={elem.endpoint}
+              duration={elem.duration}
+            ></ProgramsDetail>
+          );
+        })}
       </div>
     </div>
   );
