@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./styles/ProgramsDetail.css";
 
-const ProgramsDetail = ({ title, imgSrc, endpoint, text }) => {
+const ProgramsDetail = ({ title, imgSrc, endpoint, description, duration }) => {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
@@ -53,7 +53,7 @@ const ProgramsDetail = ({ title, imgSrc, endpoint, text }) => {
         className={`program-description ${clicked == false ? "visible" : ""}`}
         onClick={handleClick}
       >
-        {text}
+        {description}
       </p>
       <a
         href={`https://app.fitr.training/p/${endpoint}`}

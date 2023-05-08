@@ -224,7 +224,7 @@
     font-weight: bolder;
     color: white;
     position: absolute;
-    bottom: -25%;
+    bottom: -30%;
     transition: 1s;
     z-index: 1;
   }
@@ -248,7 +248,7 @@
   }
 
   .transformed {
-    bottom: 25%;
+    bottom: 15%;
   }
 
   .blurred {

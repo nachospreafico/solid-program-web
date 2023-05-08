@@ -73,23 +73,23 @@ const ProgramsDetailContainer = () => {
           title="Competitor"
           imgSrc={CompetitorImg}
           endpoint="solid-comp"
-          text={competitorText}
+          description={competitorText}
         />
         <ProgramsDetail
           title="Queens"
           imgSrc={QueensImg}
           endpoint="solid-queens"
-          text={queensText}
+          description={queensText}
         />
         <ProgramsDetail
-          title="Fitness"
+          title="Solid Hour"
           imgSrc={FitnessImg}
           endpoint="solid-hour-5d"
-          text={fitnessText}
+          description={fitnessText}
         />
         <ProgramsDetail
           title="Personalizado"
-          text={personalizadosText}
+          description={personalizadosText}
           imgSrc={PersonalImg}
           endpoint="solid-personalizados"
         />

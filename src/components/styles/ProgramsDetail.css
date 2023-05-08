@@ -308,6 +308,7 @@
     position: absolute;
     bottom: 33%;
     text-align: center;
+    transition: 1s;
   }
 
   .program-description {
